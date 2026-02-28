@@ -1,0 +1,104 @@
+# The base URL of the site; must end with a slash.
+base_url = "https://yourusername.github.io/my_pages/"
+
+# The main title of your website.
+title = "My Personal Notes"
+# A short description of your site (used in feeds and metadata).
+description = "My personal blog and notes"
+
+# The name of the theme directory in the 'themes' folder.
+theme = "cela"
+
+# The default language code for your site.
+default_language = "en"
+
+# Whether to generate a search index for the built-in search functionality.
+build_search_index = true
+
+[markdown]
+# Whether to enable syntax highlighting for code blocks.
+highlight_code = true
+# Whether to convert emoji aliases (like :smile:) into Unicode emojis.
+render_emoji = true
+
+# Define the taxonomies for the site (tags and categories).
+taxonomies = [
+  { name = "tags", feed = true },       # Each tag will have its own RSS/Atom feed.
+  { name = "categories", feed = true }, # Each category will have its own feed.
+]
+
+[extra.cela]
+# Title displayed in the header area.
+header_title = "My Pages"
+# Title displayed on the home page hero section.
+home_title = "Welcome"
+# Content text displayed on the home page.
+home_content = "My personal blog and notes."
+# The directory under 'content' to pull posts from for the home page list.
+home_content_dir = "blog"
+
+# Navigation menu items.
+navigation = [
+  { path = "/blog", title = "All Posts" },            # Link to the blog section.
+  { path = "/about", title = "About" },               # Link to an about page.
+  { path = "/tags", title = "Tags" },                 # Link to the tags taxonomy list.
+  { path = "#", title = "Search", is_search = true }, # Special trigger for the search overlay.
+]
+
+# Toggle the dark/light mode switcher in the header.
+show_theme_toggle = true
+# Toggle displaying estimated reading time on posts.
+show_reading_time = true
+# Toggle displaying the word count on posts.
+show_word_count = true
+# Toggle displaying the Table of Contents on posts.
+show_toc = true
+# The format string used for dates (strftime format).
+date_format = "%Y-%m-%d"
+# Toggle displaying post metadata (date, author, tags).
+show_post_meta = true
+# Toggle displaying the "Edit this post" button (Suggest changes).
+show_post_edit_button = false
+# Link to your site source or an email address to enable the "Suggest changes" button.
+# If disabled above, this can be an empty string to avoid build errors.
+edit_post_url = ""
+# Toggle displaying links to previous/next posts at the bottom.
+show_post_nav_links = true
+# Toggle showing taxonomies (tags/categories) at the end of posts.
+show_taxonomies_tail = true
+# Toggle displaying descriptions for taxonomies if provided.
+show_taxonomies_description = true
+# Toggle the "Back to top" button.
+show_scroll_to_top = true
+# Toggle the copy button on code blocks.
+show_code_copy_buttons = true
+# Toggle showing social media icons on the home page.
+show_home_social_icons = true
+# Toggle showing the home page title.
+show_home_title = true
+# Toggle showing the home page content text.
+show_home_content = true
+# Toggle showing the Cela theme logo in the footer.
+show_cela_logo = false
+# If true, the Table of Contents will be expanded by default.
+unfold_toc = false
+
+# Social media icons displayed on the home page.
+social_icons = [
+  { path = "https://github.com/yourusername", title = "GitHub", icon = "github" },
+  { path = "mailto:your-email@example.com", title = "Email", icon = "email" },
+]
+
+[extra.cela.global]
+# Whether to show the site title in the browser tab.
+title_show = true
+# A prefix or emoji to add before the page title in the browser tab.
+title_prefix = "🌟"
+# Directory for internationalization files (translations).
+i18n_dir = "i18n_dir"
+
+[extra.cela.color]
+# The default color scheme (dark or light).
+default_theme = "dark"
+# Whether to remember the user's theme choice using local storage.
+remember_choice = true

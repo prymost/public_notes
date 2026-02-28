@@ -1,0 +1,11 @@
+# Zola output
+public/
+
+# Temporary files
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# DevContainer / VS Code (optional to ignore, usually kept)
+# .vscode/
