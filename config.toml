@@ -2,9 +2,9 @@
 base_url = "https://yourusername.github.io/my_pages/"
 
 # The main title of your website.
-title = "My Personal Notes"
+title = "My notes and stuff"
 # A short description of your site (used in feeds and metadata).
-description = "My personal blog and notes"
+description = "This is just a space for me to share some notes and thoughts. I hope someone finds something useful here."
 
 # The name of the theme directory in the 'themes' folder.
 theme = "cela"
@@ -15,17 +15,17 @@ default_language = "en"
 # Whether to generate a search index for the built-in search functionality.
 build_search_index = true
 
-[markdown]
-# Whether to enable syntax highlighting for code blocks.
-highlight_code = true
-# Whether to convert emoji aliases (like :smile:) into Unicode emojis.
-render_emoji = true
-
 # Define the taxonomies for the site (tags and categories).
 taxonomies = [
   { name = "tags", feed = true },       # Each tag will have its own RSS/Atom feed.
   { name = "categories", feed = true }, # Each category will have its own feed.
 ]
+
+[markdown]
+# Whether to enable syntax highlighting for code blocks.
+highlight_code = true
+# Whether to convert emoji aliases (like :smile:) into Unicode emojis.
+render_emoji = true
 
 [extra.cela]
 # Title displayed in the header area.
@@ -33,7 +33,7 @@ header_title = "My Pages"
 # Title displayed on the home page hero section.
 home_title = "Welcome"
 # Content text displayed on the home page.
-home_content = "My personal blog and notes."
+home_content = "This is just a space for me to share some notes and thoughts. I hope someone finds something useful here."
 # The directory under 'content' to pull posts from for the home page list.
 home_content_dir = "blog"
 
@@ -62,6 +62,19 @@ show_post_edit_button = false
 # Link to your site source or an email address to enable the "Suggest changes" button.
 # If disabled above, this can be an empty string to avoid build errors.
 edit_post_url = ""
+
+# Taxonomy descriptions (used in the tags/categories list pages).
+taxonomies_desc = [
+  { name = "tags", desc = "A list of all the tags used in these notes." },
+  { name = "categories", desc = "Broad groups for organizing my thoughts and notes." },
+]
+
+# Taxonomy tails (emojis used in the breadcrumbs).
+taxonomies_tail = [
+  { name = "tags", emoji = "🏷️" },
+  { name = "categories", emoji = "📂" },
+]
+
 # Toggle displaying links to previous/next posts at the bottom.
 show_post_nav_links = true
 # Toggle showing taxonomies (tags/categories) at the end of posts.
