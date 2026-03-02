@@ -16,8 +16,11 @@ Since this project is set up with a **DevContainer**, you don't need to install 
 
 ## 📝 Writing Content
 
--   **Posts**: Add new Markdown files to `content/blog/`.
--   **Structure**: Every post needs a "Front Matter" block at the top:
+-   **Automatic**: Run the helper script to create a post with correct metadata:
+    ```bash
+    ./new_post "My New Post"
+    ```
+-   **Manual**: Add new Markdown files to `content/blog/`. Every post needs a "Front Matter" block at the top:
     ```markdown
     +++
     title = "My New Post"

@@ -1,0 +1,37 @@
+#!/bin/bash
+set -uo pipefail
+IFS=$'\n\t'
+
+# Check if a title was provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 "Post Title""
+    exit 1
+fi
+
+TITLE="$1"
+# Create a slug: lowercase, replace spaces with underscores, remove special chars
+SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/ /_/g' | sed 's/[^a-z0-9_]//g')
+DATE=$(date +%Y-%m-%d)
+FILENAME="content/blog/${SLUG}.md"
+
+# Check if file already exists
+if [ -f "$FILENAME" ]; then
+    echo "Error: $FILENAME already exists."
+    exit 1
+fi
+
+# Create the file with front matter
+cat <<EOF > "$FILENAME"
++++
+title = "$TITLE"
+date = $DATE
+
+[taxonomies]
+categories = ["General"]
+tags = ["New"]
++++
+
+Your content here...
+EOF
+
+echo "Created new post: $FILENAME"

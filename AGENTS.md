@@ -41,8 +41,13 @@ zola build
 ## Development Conventions
 
 ### Creating New Content
-1. Add a new `.md` file to `content/blog/`.
-2. Every file MUST have TOML front matter:
+To create a new post with the correct front matter, use the helper script:
+
+```bash
+./new_post "My New Post"
+```
+
+Alternatively, you can manually add a new `.md` file to `content/blog/`. Every file MUST have TOML front matter:
    ```markdown
    +++
    title = "My New Post"
