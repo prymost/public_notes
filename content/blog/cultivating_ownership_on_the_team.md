@@ -1,6 +1,6 @@
 +++
 title = "Cultivating Ownership on the Team"
-date = 2025-09-29
+date = 2025-08-23
 
 [taxonomies]
 categories = ["Management"]

@@ -1,6 +1,6 @@
 +++
 title = "Blocking ads on your home internet"
-date = 2025-10-06
+date = 2025-09-06
 
 [taxonomies]
 categories = ["Networking"]
