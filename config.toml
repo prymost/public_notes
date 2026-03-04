@@ -22,8 +22,6 @@ taxonomies = [
 ]
 
 [markdown]
-# Whether to enable syntax highlighting for code blocks.
-highlight_code = true
 # Whether to convert emoji aliases (like :smile:) into Unicode emojis.
 render_emoji = true
 
