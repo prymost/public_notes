@@ -97,8 +97,8 @@ unfold_toc = false
 
 # Social media icons displayed on the home page.
 social_icons = [
-  { path = "https://github.com/yourusername", title = "GitHub", icon = "github" },
-  { path = "mailto:your-email@example.com", title = "Email", icon = "email" },
+  { path = "https://github.com/prymost", title = "GitHub", icon = "github" },
+  { path = "mailto:swimming.unclaimed312@idaro.io", title = "Email", icon = "email" },
 ]
 
 [extra.cela.global]
