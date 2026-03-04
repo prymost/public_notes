@@ -1,5 +1,5 @@
 # The base URL of the site; must end with a slash.
-base_url = "https://yourusername.github.io/my_pages/"
+base_url = "https://prymost.github.io/public_notes/"
 
 # The main title of your website.
 title = "My notes and stuff"
@@ -37,10 +37,10 @@ home_content_dir = "blog"
 
 # Navigation menu items.
 navigation = [
-  { path = "/blog", title = "All Posts" },            # Link to the blog section.
-  { path = "/about", title = "About" },               # Link to an about page.
-  { path = "/tags", title = "Tags" },                 # Link to the tags taxonomy list.
-  { path = "/categories", title = "Categories" },      # Link to the categories taxonomy list.
+  { path = "blog", title = "All Posts" },            # Link to the blog section.
+  { path = "about", title = "About" },               # Link to an about page.
+  { path = "tags", title = "Tags" },                 # Link to the tags taxonomy list.
+  { path = "categories", title = "Categories" },      # Link to the categories taxonomy list.
   { path = "#", title = "Search", is_search = true }, # Special trigger for the search overlay.
 ]
 
